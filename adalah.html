@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy New Year 2026</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+    background: linear-gradient(
+        270deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        magenta,
+        red
+    );
+    background-size: 800% 800%;
+    animation: rgbBg 6s linear infinite;
+}
+
+@keyframes rgbBg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    padding:40px;
+    border-radius:20px;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(255,255,255,0.3);
+}
+
+h1{
+    font-size:2.8rem;
+    animation: rgbText 1.5s infinite;
+    text-shadow: 0 0 25px white;
+}
+
+.year{
+    font-size:5rem;
+    font-weight:bold;
+    animation: rgbText 1s infinite alternate;
+}
+
+@keyframes rgbText{
+    0%{color:red;}
+    20%{color:yellow;}
+    40%{color:lime;}
+    60%{color:cyan;}
+    80%{color:magenta;}
+    100%{color:red;}
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>HAPPY NEW YEAR</h1>
+        <div class="year">2026</div>
+    </div>
+</body>
+</html>
